@@ -67,6 +67,21 @@ body {
   .create-room-container a {
     color: #ffcc00; /* Yellow color for the link */
     text-decoration: underline; /* Underline the link */
-    font-weight: bold; /* Make the link bold */
+    font-weight: bold; /* Make the link bold */ 
   }
+
+  .divider {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: 2px;
+    background-color: rgb(99, 95, 100);
+    margin: 0px;
+  }
+  
   

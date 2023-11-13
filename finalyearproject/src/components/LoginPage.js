@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LoginPage.css'; // Import the corresponding CSS file
+import './LoginPage.css'; // Importing the corresponding CSS file
 import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
@@ -17,9 +17,9 @@ function LoginPage() {
   return (
     <div className="LoginPage">
       <div className="logo-container">
-        {/* Replace 'YourLogo.png' with the actual path to your logo */}
+        
         <img src="/codelogo.png" alt="Logo" className="logo" />
-        <h1>Code Editor</h1>
+        <h1>CodeSync</h1>
       </div>
       <div className="invitation-container">
         <p>Paste invitation room ID</p>
@@ -40,6 +40,13 @@ function LoginPage() {
       <div className="create-room-container">
         <p>If you don't have an invite, then create a <a href="/new-room">new room</a>.</p>
         {/* Add logic or a link to create a new room */}
+      </div>
+
+      <div className="divider">OR</div>
+
+      <div className="single-room">
+        <p>Don't want to collab, then join directly !!!</p>
+        <button onClick={handleJoinClick}>Join</button>
       </div>
     </div>
   );
